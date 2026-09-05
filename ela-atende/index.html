@@ -161,6 +161,9 @@
   }
   .resource-item:hover{background:var(--paper); transform:translateY(-2px);}
   .resource-item .dot{width:6px; height:6px; border-radius:50%; background:var(--berry); margin-top:8px; flex-shrink:0;}
+  .resource-item.detailed{flex-direction:column; gap:6px;}
+  .resource-item.detailed .r-title{display:flex; align-items:center; gap:10px; font-weight:700;}
+  .resource-item.detailed .r-desc{font-size:13.5px; font-weight:400; color:var(--ink-soft); padding-left:16px;}
 
   /* ---------- Audience badge ---------- */
   .audience-badge{
@@ -239,7 +242,7 @@
       <a href="https://rotasingular.com/#sobre">Sobre</a>
       <a href="https://rotasingular.com/#solucoes">Soluções</a>
       <a href="https://rotasingular.com/#projetos">Projetos</a>
-      <a href="mailto:contato@rotasingular.com" class="nav-cta">Fale com a Rota</a>
+      <a href="https://rotasingular.com/Contato/" class="nav-cta">Fale com a Rota</a>
     </nav>
   </div>
 </header>
@@ -252,9 +255,9 @@
   <div class="family-strip">
     <div class="wrap">
       <span class="label">Soluções Rota Singular</span>
-      <a href="/ela-organiza/">ela.organiza</a>
-      <a href="/ela-planeja/">ela.planeja</a>
-      <a href="pp-ela-atende.html" class="current">ela.atende</a>
+      <a href="/ela.organiza/">ela.organiza</a>
+      <a href="/ela.planeja/">ela.planeja</a>
+      <a href="/ela.atende/" class="current">ela.atende</a>
     </div>
   </div>
 
@@ -269,7 +272,7 @@
         <div class="audience-badge"><strong>Público:</strong>&nbsp;psicólogos, terapeutas, nutricionistas, consultores, coaches e outros profissionais de atendimento.</div>
         <div class="hero-actions">
           <a href="#funcionalidades" class="btn btn-primary">Ver a aplicação <span class="btn-arrow">→</span></a>
-          <a href="mailto:contato@rotasingular.com?subject=ela.atende" class="btn btn-ghost">Falar sobre este projeto</a>
+          <a href="https://rotasingular.com/projeto/" class="btn btn-ghost">Falar sobre este projeto</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -294,14 +297,13 @@
         <h2 class="section-title">O que o ela.atende oferece</h2>
       </div>
 
-      <div class="resource-grid reveal">
-        <div class="resource-item"><span class="dot"></span><span>Cadastro de clientes</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Agenda</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Histórico de atendimentos</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Evoluções</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Financeiro</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Relatórios</span></div>
-        <div class="resource-item"><span class="dot"></span><span>Tarefas</span></div>
+      <div class="resource-grid reveal" style="grid-template-columns:repeat(auto-fill, minmax(280px,1fr));">
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Cadastro de Clientes</span><span class="r-desc">Prontuário digital com informações e histórico de cada cliente.</span></div>
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Agenda de Atendimentos</span><span class="r-desc">Organização dos compromissos, horários e status dos atendimentos.</span></div>
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Histórico de Atendimentos</span><span class="r-desc">Registro detalhado de sessões, objetivos, atividades, observações e próximos passos.</span></div>
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Evoluções</span><span class="r-desc">Acompanhamento do percurso de cada cliente ao longo dos atendimentos.</span></div>
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Controle Financeiro</span><span class="r-desc">Registro de receitas, despesas, pagamentos e valores pendentes.</span></div>
+        <div class="resource-item detailed"><span class="r-title"><span class="dot"></span>Relatórios</span><span class="r-desc">Resumos por cliente, período ou histórico, com possibilidade de exportação em PDF.</span></div>
       </div>
     </div>
   </section>
@@ -315,7 +317,7 @@
         </div>
         <h2 class="section-title">Quer um produto como o ela.atende?</h2>
         <p>Podemos construir uma solução digital feita à medida do seu contexto, do início ao fim.</p>
-        <a href="mailto:contato@rotasingular.com" class="btn btn-primary">Fale com a Rota <span class="btn-arrow">→</span></a>
+        <a href="https://rotasingular.com/Contato/" class="btn btn-primary">Fale com a Rota <span class="btn-arrow">→</span></a>
       </div>
     </div>
   </section>
